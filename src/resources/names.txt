@@ -2,3 +2,5 @@ Add your moniker (does not need to be your real name) to this list and then subm
 repository.
 Dominic Kua
 Morgan
+Syed Ali
+Phil Bongos
