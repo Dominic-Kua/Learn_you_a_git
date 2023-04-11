@@ -13,7 +13,9 @@ repository in everyday work (and home life if you want.)
 #### Mac OS:
 
 The recommended method for this is to use Homebrew. 
-HomeBrew `brew install git` 
+HomeBrew `brew update && brew install git` 
+
+Current issue: may not support MacOS 13.1
 
 (If you don't have HomeBrew, I recommend it, instructions [here](https://brew.sh/).) 
 
@@ -83,7 +85,7 @@ I've previously given a talk on this at The Fast and The Curious, and the slide 
 brief summary follows: 
 
 * Git is primarily a version control system, it tracks changes you tell it to in files you tell it about. 
-* To tell git about a file or change, you _stage_ or _add_ it.
+* To tell git about a file or change, you _stage_ or _add_ it `git add <file>`.
 * To tell git to write the changes you've added to its database, you _commit_
 * Commits should have a descriptive, but short, commit message. Add this using the `-m` flag as in `git commit -m`
 * Git's not just on your machine necessarily! Most often it's used with a central repository server, like 
@@ -105,4 +107,8 @@ we'll use that language.
 1) Fork this repo
 2) Clone your fork to your machine
 3) Add your name to `src/resources/names.txt`, does not need to be your real name, this is a public repo.
+    * Do this by making the change
+    * then `git add src/resources/names.txt`
+    * then `git commit -m "my awesome commit message"`
+    * then `git push`
 4) Submit a pull request back to my repo. You do this [through the web interface](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). 
